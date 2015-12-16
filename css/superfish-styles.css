@@ -1,0 +1,223 @@
+/**************************
+ * Styles for Superfish Drop-Down/Megamenus
+ */
+.sf-menu {
+  float: left;
+  margin-bottom: 1em;
+  padding: 0;
+  visibility: visible;
+}
+.sf-menu.sf-navbar {
+}
+
+.sf-menu.sf-primary-links {
+  width: 852px;
+  height: 36px;
+  padding-left: 98px !important;
+  margin: 0 5px 0 5px;
+  background-color: #512888;
+  border-bottom: 5px solid #ecd391;
+}
+
+.sf-menu ul,
+ul.sf-menu {
+  padding-left: 0;
+}
+
+.sf-hidden {
+  visibility: hidden;
+}
+
+.sf-menu ul {
+  padding-left: 0;
+}
+
+.sf-menu a {
+  border-top: none;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.sf-menu li { 
+}
+
+.sf-menu a,
+.sf-menu a:visited  {
+  color: #333333;
+  padding: 8px 10px 8px 10px;
+}
+.sf-menu a.sf-with-ul {
+  padding-right: 2.25em;
+}
+
+.sf-menu span.sf-description {
+  color: #333333;
+  display: block;
+  padding: 0;
+}
+.sf-menu li,
+.sf-menu li:hover,
+.sf-menu li:active,
+.sf-menu.sf-navbar {
+}
+
+.sf-menu > li { 
+  height: 36px;
+}
+
+.sf-menu > li > a,
+.sf-menu > li > a:visited {
+  border: none;
+  line-height: 36px;
+  padding: 0 20px 0 20px;
+  color: #ffffff;
+  border-left: 1px solid #411977;
+  font-size: 12px;
+  font-family: Arial;
+}
+
+/* Set the first element to be wider */
+.sf-menu > li.first > a {
+  color: #ffffff;
+  border-left: none;
+  text-align: right;
+  padding: 0 10px 0 10px;
+}
+
+.sf-menu > li > a:hover,
+.sf-menu > li > a:active,
+.sf-menu > li.sfHover > a {
+  color: #333333;
+  background-color: #ecd391; 
+}
+
+.sf-menu li li {
+  background-color: #e2e0d6;
+}
+.sf-menu li li li {
+  background-color: #e2e0d6;
+}
+
+.sf-menu a:focus,
+.sf-menu a:hover,
+.sf-menu a:active {
+  background: #ecd391;
+  color: #333333;
+  outline: 0;
+}
+
+.sf-menu ul.sf-megamenu {
+  top: 36px !important;
+  border-top: 5px solid #ecd391;
+  box-shadow: 0 5px 20px #aaaaaa;
+  background-color: #e2e0d6;
+  padding: 5px 20px 5px 20px;
+}
+
+.sf-menu ul.sf-megamenu li.sf-megamenu-wrapper ol,
+.sf-menu ul.sf-megamenu li.sf-megamenu-wrapper ol li {
+  margin: 0;
+  padding: 0;
+}
+.sf-menu ul.sf-megamenu li.sf-megamenu-wrapper a.menuparent {
+  font-weight: bold;
+}
+.sf-menu ul.sf-megamenu li.sf-megamenu-wrapper ol li.sf-megamenu-column {
+  display: inline;
+  float: left;
+  width: 12em;
+}
+.sf-menu.rtl ul.sf-megamenu li.sf-megamenu-wrapper ol li.sf-megamenu-column {
+  float: right;
+}
+
+.sf-menu li.sf-parent-children-1 ul.sf-megamenu {
+}
+.sf-menu li.sf-parent-children-2 ul.sf-megamenu {
+}
+.sf-menu li.sf-parent-children-3 ul.sf-megamenu {
+}
+.sf-menu li.sf-parent-children-4 ul.sf-megamenu {  
+}
+.sf-menu li.sf-parent-children-5 ul.sf-megamenu {  
+}
+.sf-menu li.sf-parent-children-6 ul.sf-megamenu {  
+}
+.sf-menu li.sf-parent-children-7 ul.sf-megamenu {  
+}
+.sf-menu li.sf-parent-children-8 ul.sf-megamenu {  
+}
+.sf-menu li.sf-parent-children-9 ul.sf-megamenu {
+}
+.sf-menu li.sf-parent-children-10 ul.sf-megamenu {
+}
+
+/* CIS Home */
+.sf-menu li.sf-item-1 ul.sf-megamenu {
+  width: 735px;
+  left: 0px;
+}
+/* About */
+.sf-menu li.sf-item-2 ul.sf-megamenu {
+  width: 735px;
+  left: 0px;
+}
+/* People */
+.sf-menu li.sf-item-3 ul.sf-megamenu {
+  width: 735px;
+  left: -75px;
+}
+/* Research */
+.sf-menu li.sf-item-4 ul.sf-megamenu {
+  width: 735px;
+  left: -155px;
+}
+/* Programs */
+.sf-menu li.sf-item-5 ul.sf-megamenu {
+  width: 735px;
+  left: -252px;
+}
+/* Courses */
+.sf-menu li.sf-item-6 ul.sf-megamenu {
+  width: 735px;
+  left: -350px;
+}
+/* Outreach */
+.sf-menu li.sf-item-7 ul.sf-megamenu {
+  width: 735px;
+  left: -440px;
+}
+/* News & Events */
+.sf-menu li.sf-item-8 ul.sf-megamenu {
+  width: 735px;
+  left: -534px;
+}
+/* Employment */
+.sf-menu li.sf-item-9 ul.sf-megamenu {
+  width: 735px;
+  left: -662px;
+}
+
+.sf-menu ul.sf-megamenu li.sf-megamenu-wrapper > ol > li {
+  width: 180px;
+}
+
+.sf-menu ul.sf-megamenu li.sf-megamenu-wrapper > ol > li.sf-megamenu-column {
+  width: 180px;
+}
+
+li.sf-megamenu-column ol li {
+}
+
+li.sf-megamenu-column ol li.last {
+  }
+
+li.sf-megamenu-column ol li a {
+  padding-left: 20px !important;
+  font-weight: normal !important;
+}
+
+.sf-menu li.active-trail > a {
+  background-color: #ecd391;
+  color: #333333;
+}

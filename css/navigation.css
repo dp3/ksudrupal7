@@ -1,0 +1,253 @@
+/* $Id: navigation.css,v 1.5 2009/11/04 19:42:41 johnalbin Exp $ */
+
+/**
+ * @file
+ * Navigation Styling
+ */
+
+
+/*
+ * The active item in a Drupal menu
+ */
+li a.active {
+}
+
+/*
+ * Navigation bar
+ */
+#navigation {
+   float:center;
+   width:100%;
+   background:#512888;
+   border-bottom:4px solid #ecd391;
+   overflow:hidden;
+   position:relative;
+}
+
+.region-navigation {
+}
+
+/*
+ * Primary and Secondary menu links
+ */
+#main-menu {
+}
+
+#secondary-menu {
+}
+
+#secondary-menu a:link, 
+#secondary-menu a:visited {
+}
+
+#secondary-menu a:hover, 
+#secondary-menu a:focus {
+}
+/*
+* Breadcrumbs
+*/
+
+#breadcrumb {
+  margin-left: 220px;
+  font-size: 9px;
+}
+
+#breadcrumb a:link,
+#breadcrumb a:visited,
+#breadcrumb a:active,
+#breadcrumb a:hover {
+  color: #666666;
+}
+
+/*
+* Navigation Menu
+*/
+.block {
+}
+
+.block-title {
+display:none;
+}
+
+
+.block ul {
+  list-style: none;
+}
+
+.block ul.menu,ul.nice-menu {
+  padding-left: 0;
+
+}
+
+.block .content {
+
+}
+
+/* Applies to all menus */
+ul.menu {
+     list-style-type: none;
+     //margin-left: 180px;
+     //margin-right: 180px;
+    position:relative;
+    width:100%;
+}
+
+/* Applies to all menu li's */
+ul.menu li {
+    float: left;
+  list-style-type: none;
+  list-style-image: none;
+}
+
+ul.menu li ul li{
+}
+/* Applies to all menu li a's */
+ul.menu li a {
+  background-color: #512888;
+  border-left: 1px solid #411977;
+  display: block;
+  color: #FFFFFF;
+//  text-decoration: none;
+  line-height:31px;
+  height:36px;
+  //list-style: none;
+  font-size: 0.75rem; /* 1em = 13px: 0.8461em * 13px = 11px */
+  font-weight: 700;
+  padding: 4px 20px 3px 20px;  //top right bottom left 
+//  border-bottom: solid 5px #ecd391;
+//  position: relative;
+//      margin: auto;
+//  margin: 0 -9999rem;
+}
+
+
+ul.menu a:hover,
+ul.menu a:active,
+ul.menu ul.menu a:hover,
+ul.menu ul.menu a:active {
+  background-color: #ecd391;
+  color:#000000;
+}
+
+
+.content > ul.menu > li.first > a {
+  border-radius: 8px 8px 0 0;
+}
+
+.content > ul.menu > li.last > a { 
+  border-radius: 0 0 8px 8px;
+}
+
+ul.menu li ul.menu {
+}
+
+ul.menu li ul li {
+
+}
+
+ul.menu li ul.menu li a {
+  margin-left: 20px;
+  border-bottom: none;
+  background-color: #eeede8;
+}
+
+ul.menu li ul.menu li ul.menu li a {
+  margin-left: 40px;
+}
+
+
+
+
+/*
+ * Menu blocks
+ */
+.block-menu {
+}
+
+/*
+ * "Menu block" blocks. See http://drupal.org/project/menu_block
+ */
+.block-menu_block {
+}
+
+/*
+ * Pager
+ */
+
+.pager-current { 
+  font-weight: bold;
+  background-color: #cbebf9;
+}
+
+.content > ul.menu > li.first > a {
+  border-radius: 8px 8px 0 0;
+}
+
+.content > ul.menu > li.last > a { 
+  border-radius: 0 0 8px 8px;
+}
+/*
+//Superfish is a plugin for drupal, Below is the setup for the main menu
+// attribute for top menu blocks
+ul#superfish-1{
+  display:inline-block;
+  margin:0;
+  padding:0;
+  //position:relative;
+  left: 185px;
+}   
+
+//attributes for every  menu block
+ul#superfish-1 li a {
+  background-color: #e2e0d6;
+  display: block;
+  color: #333333;
+  text-decoration: none;
+  font-size: .8461em ; //0.8461em;  1em = 13px: 0.8461em  13px = 11px 
+  font-weight: bold;
+  line-height: 14px;
+  Left: 100px;
+  //padding: 13px 20px 17px 19px
+        //top right bottom left
+  padding: 13px 6px 17px 7px;
+  //border-bottom: solid 1px white;
+}
+
+ul#superfish-1 li a ul {
+  padding: 6px 7px 7px 6px;
+}
+
+/*
+//display horizontal 
+ul#superfish-1 li {
+ display:block;
+}
+
+//background color when selected
+ul#superfish-1 a:hover,
+ul#superfish-1 a:active,
+ul#superfish-1 ul.menu a:hover,
+ul#superfish-1 ul.menu a:active {
+  background-color: #ecd391;
+
+}
+//display menu horizontal
+ul#superfish-1 li ul {
+ //display:inline-block; 
+}
+
+//subnav
+ul#superfish-1 li ul li{
+  //float:none;
+}
+
+//hide sub nav when not selected
+ul#superfish-1 li ul{
+  //display:none;
+}
+//display subnav when selected
+ul#superfish-1 li:hover ul{
+ // display:block;
+ // position:absolute;
+}
+*/
