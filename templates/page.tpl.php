@@ -166,7 +166,7 @@
     </div><!-- /#header -->
  
     <div id="unitbar" >
-        <div  id="navigation" >
+        <div  id="navigation">
         <!-- div id="main-wrapper"> -->
             <?php if ($main_menu): ?>
                 <nav  id="main-menu" role="navigation" tabindex="-1">
@@ -231,7 +231,7 @@
 
 
         <?php if (render($page['tabs'])): ?>
-          <div class="tabs"><?php print render($page['tabs']); ?></div>
+          <div class="tabs"><?php print render($page['tab   s']); ?></div>
         <?php endif; ?>
 
         <?php print render($page['help']); ?>
@@ -251,7 +251,10 @@
       </div></div><!-- /.section, /#content -->
 
       <?php print render($page['sidebar_first']); ?>
-
+        <div id='ksu-menu-sidebar'>
+        Custom-ksu-sidebar 
+  
+        </div>
       <?php print render($page['sidebar_second']); ?>
 
     </div></div><!-- /#main, /#main-wrapper -->
