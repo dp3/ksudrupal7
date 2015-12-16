@@ -94,12 +94,14 @@ ul.menu {
 
 /* Applies to all menu li's */
 ul.menu li {
-    float: left;
-  list-style-type: none;
-  list-style-image: none;
+  //display:block;
+        float: left;
+  //list-style-type: none;
+  //list-style-image: none;
 }
 
 ul.menu li ul li{
+    display:block;
 }
 /* Applies to all menu li a's */
 ul.menu li a {
@@ -129,6 +131,14 @@ ul.menu ul.menu a:active {
   color:#000000;
 }
 
+ul.menu ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: black;
+  padding: 0;
+}
 
 .content > ul.menu > li.first > a {
   border-radius: 8px 8px 0 0;

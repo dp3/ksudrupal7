@@ -125,11 +125,11 @@
   <?php print render($page['scripts']); ?>
 </head>
 <body class="<?php print $classes; ?>">
-
-  <?php if (render($page['primary_links'])): ?>
-    <div id="skip-link"><a href="#main-menu"><?php print t('Jump to Navigation'); ?></a></div>
-  <?php endif; ?>
-
+<!--
+  <?php /*if (render($page['primary_links'])): */?>
+    <div id="skip-link"><a href="#main-menu" ><? /* php print t('Jump to Navigation') ;*/ ?></a></div>
+  <?php/* endif; */?>
+-->
   <div id="page-wrapper"><div id="page">
 
     <div id="header"><div class="section clearfix">
@@ -143,7 +143,8 @@
       <?php /* if ($search_box):*/ ?>
         <div id="search-box">
             <?php /*print render($page['search_box']); */        
-                $block = module_invoke('search', 'block_view', 'Search');
+                /* enable search capabilities in zen */
+                $block = module_invoke('search', 'block_view', 'header-search');
                 print render($block); 
             ?>
           <a id="atoz" href="http://www.k-state.edu/directories/">Browse A-Z</a>
@@ -159,15 +160,14 @@
         </div>
       <?php /* endif; */?>
 
-      <?php print render($page['header']); ?>
-
-      
+      <?php print render($page['header']); ?> 
 
     </div> <!-- /.section -->
     </div><!-- /#header -->
-
+ 
     <div id="unitbar" >
         <div  id="navigation" >
+        <!-- div id="main-wrapper"> -->
             <?php if ($main_menu): ?>
                 <nav  id="main-menu" role="navigation" tabindex="-1">
                     <?php
@@ -183,8 +183,9 @@
                           'heading' => array(
                           'text' => t('Main menu'),
                           'level' => 'h2',
-                          'class' => array('element-invisible'),
-                          ),
+                          /*'class' => array('element-invisible'),*/
+                          'class' => array('links', 'block', 'clearfix'),
+                           ),
                     )); ?>
                 </nav>
             <?php endif; ?>  <!-- main_menu end -->
@@ -212,7 +213,7 @@
    </div><!-- /#unitbar -->
 
 
-   <div id="main-wrapper">
+  <div id="main-wrapper"> 
    <div id="main" class="clearfix <? /** php if (render($page['main_menu'])) {  print render($page['main_menu']);}**/ ?>">
             <div id="content" class="column"><div class="section">
 
@@ -277,13 +278,7 @@
               <li><a href="http://www.k-state.edu/disclosures/" target="_parent">Statements and disclosures</a></li>
             </ul>
           </div>
-          <ul id="footer-social">
-               <li><a class="ksu-facebook-icon" href="http://www.facebook.com/KState" title="Facebook"></a></li>
-               <li><a class="ksu-twitter-icon" href="http://twitter.com/KState" title="Twitter"></a></li>
-               <li><a class="ksu-youtube-icon" href="http://www.youtube.com/user/KState" title="YouTube"></a></li>
-               <li><a class="ksu-foursq-icon" href="https://foursquare.com/v/kansas-state-university/4ba0ec7cf964a520678737e3" title="Foursquare"></a></li>
-               <li><a class="ksu-gplus-icon" href="https://plus.google.com/u/0/112281507388935453137/posts" title="Google+"></a></li>
-          </ul>          
+                
           <div id="footer-addr">
             <ul>
               <li>Kansas State University</li>
@@ -292,6 +287,15 @@
               <li><a href="http://www.k-state.edu/copyright.html" target="_parent">&copy; Kansas State University</a></li>
             </ul>
           </div>
+        <div id="footer-social">
+         </ul>    
+              <li><a class="ksu-facebook-icon" href="http://www.facebook.com/KState" title="Facebook"></a></li>
+               <li><a class="ksu-twitter-icon" href="http://twitter.com/KState" title="Twitter"></a></li>
+               <li><a class="ksu-youtube-icon" href="http://www.youtube.com/user/KState" title="YouTube"></a></li>
+               <li><a class="ksu-foursq-icon" href="https://foursquare.com/v/kansas-state-university/4ba0ec7cf964a520678737e3" title="Foursquare"></a></li>
+               <li><a class="ksu-gplus-icon" href="https://plus.google.com/u/0/112281507388935453137/posts" title="Google+"></a></li>
+          </ul>  
+        </div>
         </div><!-- /.section -->
       </div><!-- /.ksu -->
     </div><!-- /#footer -->
