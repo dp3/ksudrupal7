@@ -86,6 +86,7 @@ ul.ksu-unit-social > li:first-child {
 .block h3,
 .block h4 {
   margin: 0;
+ display:none;
 }
 
 .block .content /* Block's content wrapper */ {

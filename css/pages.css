@@ -380,8 +380,12 @@ ul.links li {
  background-color: #eeede8;
  color: #333;
  border-radius: 8px;
+ font-size:11px;
  max-width: 175px;
- margin: 0px 30px 10px 5px; //top right bottom left
+ //height:30px;
+ margin: 3px 30px 30px 5px; //top right bottom left
+ padding: 10px  10px  40px 10px;
+ border: solid 1px black;
 }
 
 /*

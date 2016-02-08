@@ -116,7 +116,7 @@
 <head>
   <title><?php print render($page['head_title']); ?></title>
   <?php print render($page['header']); ?>
-  <meta property="og:image" content="<?php print $base_root .  $base_path . path_to_theme(); ?>/images/cis_logo_purple.png">
+  <meta property="og:image" content="<?php print $base_root .  $base_path . path_to_theme(); ?>/images/mathlogo.png">
   <meta property="og:title" content="<?php print $title; ?>">
   <meta property="og:url" content="<?php print $base_root . "/" . $_GET['q']; ?>">
   <meta property="og:site_name" content="<?php print $site_name; ?>">
@@ -126,9 +126,9 @@
 </head>
 <body class="<?php print $classes; ?>">
 <!--
-  <?php /*if (render($page['primary_links'])): */?>
-    <div id="skip-link"><a href="#main-menu" ><? /* php print t('Jump to Navigation') ;*/ ?></a></div>
-  <?php/* endif; */?>
+  <?/*php if (render($page['primary_links'])): */?>
+    <div id="skip-link"><a href="#main-menu" ><?/* php print t('Jump to Navigation');*/ ?></a></div>
+  <?/*php endif;*/ ?>
 -->
   <div id="page-wrapper"><div id="page">
 
@@ -168,27 +168,29 @@
     <div id="unitbar" >
         <div  id="navigation">
         <!-- div id="main-wrapper"> -->
-            <?php if ($main_menu): ?>
-                <nav  id="main-menu" role="navigation" tabindex="-1">
-                    <?php
-                        // This code snippet is hard to modify. We recommend turning off the
-                        // "Main menu" on your sub-theme's settings form, deleting this PHP
-                        // code block, and, instead, using the "Menu block" module.
-                        // @see https://drupal.org/project/menu_block
-                        print theme('links__system_main_menu', array(
-                          'links' => $main_menu,
-                          'attributes' => array(
-                          'class' => array('links', 'inline', 'clearfix'),
-                          ),
-                          'heading' => array(
-                          'text' => t('Main menu'),
-                          'level' => 'h2',
-                          /*'class' => array('element-invisible'),*/
-                          'class' => array('links', 'block', 'clearfix'),
-                           ),
-                    )); ?>
-                </nav>
-            <?php endif; ?>  <!-- main_menu end -->
+                     <?php if ($main_menu): ?>
+                        <nav  id="main-menu" role="navigation" tabindex="-1">
+                            <?php
+                                // This code snippet is hard to modify. We recommend turning off the
+                                // "Main menu" on your sub-theme's settings form, deleting this PHP
+                                // code block, and, instead, using the "Menu block" module.
+                                // @see https://drupal.org/project/menu_block
+                             //   print theme('links__system_main_menu', array(
+                             //     'links' => $main_menu,
+                             //     'attributes' => array(
+                             //     'class' => array('links', 'inline', 'clearfix'),
+                             //     ),
+                             //     'heading' => array(
+                             //     'text' => t('Main menu'),
+                             //     'level' => 'h2',
+                             //     'class' => array('element-invisible'),
+                             //       ),
+                          // id, direction, depth should have the values you want them to have.
+                         $menu = theme('nice_menus', array('id' => 1, 'direction' => 'down', 'depth' => -1, 'menu_name' => 'main-menu', 'menu' => NULL));
+                          print $menu['content'];
+                        // )); ?>          
+                       </nav>
+                    <?php endif; ?>  <!-- main_menu end --> 
             <?php print render($page['navigation']); ?>  <!--print menu -->
         </div> <!-- end navigation div-->
         <div class="section clearfix">

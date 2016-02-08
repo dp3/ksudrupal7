@@ -213,6 +213,8 @@ body {
 
 #navigation {
   /*overflow: hidden; /* May need to be removed if using a dynamic drop-down menu */
+background-color: #512888;
+border-bottom: 6px solid #ecd391;
 }
 
 /*

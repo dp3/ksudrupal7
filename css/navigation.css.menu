@@ -1,0 +1,80 @@
+//hide block title
+.block__title,
+.block-title{
+    display:none;
+}
+
+/*nav css*/
+    ul.menu{
+        display:inline-block;
+        margin:0;
+        padding:0;
+        position:relative;
+        top:5px;
+        }
+
+    /*subnav if there are no sublists*/
+    ul.menu ul{
+        display:none;
+        }
+
+    /*nav and subnav properties for each list item*/
+    ul.menu li{
+        list-style-type:none;
+        float: left;
+        }
+
+
+    /* links */
+    ul.menu li a{
+        display:block;
+        color:#ddd;
+        text-decoration:none;
+        font-weight:bold;
+        text-tranform:uppercase;
+        padding:10px 20px;
+        }
+
+    /* hover for the links */
+    ul.menu li a:hover,
+    ul.menu li:hover > a {
+        background-color:white;
+        color:black;
+        border-top-left-radius:5px;
+        border-top-right-radius:5px;
+        z-index: 999;
+        }
+
+    /*subnav background*/
+    ul.menu li:hover ul{
+        display:block;
+        position:absolute;
+        /*         color       url                        repeat    placement*/
+        //background:transparent url('subnavbg.png') no-repeat left bottom;
+        margin:0;
+        padding:10px 0 22px 0;
+        width:200px;
+        }
+
+    /*subnav*/
+    ul.menu li ul li {
+        float:none;
+        }
+
+    /* subnav unselected color */
+    ul.menu li ul li a
+        {
+        color:#777;
+        padding:5px 10px;
+        //font-family : 'Oswald';
+        }
+
+    /* subnav selected color */
+    ul.menu li ul li a:hover
+        {
+        color:black;
+        border-radius:0;
+        font-weight:normal;
+        //font-family : 'Oswald';
+        }
+
